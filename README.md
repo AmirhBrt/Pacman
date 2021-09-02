@@ -1,4 +1,5 @@
 # Pacman
 just a simple Pacman game java
 
-###- Amirhossein Barati
+###Team 
+-Amirhossein Barati

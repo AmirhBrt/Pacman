@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" stylesheets="@../styles/ScoreboardStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ScoreboardController">
+    <top>
+        <Label fx:id="text" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" text="pacman" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </Label>
+    </top>
+    <center>
+        <AnchorPane>
+            <children>
+                <Label fx:id="noUser" alignment="CENTER" layoutX="68.0" prefHeight="113.0" prefWidth="782.0" text="No User Was Found !" AnchorPane.bottomAnchor="653.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="0.0" />
+                <VBox fx:id="vBox" alignment="TOP_CENTER" layoutX="413.0" layoutY="111.0" prefHeight="655.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="111.0" />
+            </children>
+        </AnchorPane>
+    </center>
+
+    <bottom>
+        <Button alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#backToWelcome" prefHeight="40.0" prefWidth="91.0" text="Back" BorderPane.alignment="TOP_CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" />
+            </BorderPane.margin>
+        </Button>
+    </bottom>
+</BorderPane>

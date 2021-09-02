@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'PacFont';
+    src: url('fonts/PacFont.TTF');
+}
+
+.root {
+    -fx-background-color: black;
+}
+
+#text {
+    -fx-font-family: PacFont;
+    -fx-font-size: 60;
+    -fx-text-fill: #fffb00;
+    -fx-cursor: normal;
+}
+
+.button {
+    -fx-background-color: black;
+    -fx-font-family: Chiller;
+    -fx-border-color: #fffb00;
+    -fx-text-fill: #fffb00;
+    -fx-border-radius: 35;
+    -fx-font-size: 25;
+    -fx-background-radius: 35;
+}
+
+.button:hover {
+    -fx-border-color: #536DFE;
+    -fx-text-fill: #536DFE;
+    -fx-cursor: hand;
+}
+
+#startNewGame{
+    -fx-font-family: Harrington;
+    -fx-font-size: 30;
+    -fx-text-fill: #FFECB3;
+}
+
+.label{
+    -fx-font-family: Harrington;
+    -fx-font-size: 30;
+    -fx-text-fill: #FFECB3;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: Black;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow{
+    -fx-background-color: yellow;
+}
+
+.spinner{
+    -fx-font-family: Harrington;
+    -fx-font-size: 30;
+    -fx-background-color: black;
+}
+
+.spinner .text-field{
+    -fx-alignment: CENTER;
+    -fx-background-color: black;
+    -fx-text-fill: #FFECB3;
+    -fx-border-color: yellow;
+    -fx-border-radius: 15;
+}
+
+#scoreField {
+    -fx-background-color: black;
+    -fx-text-fill: #FFECB3;
+    -fx-border-radius: 30;
+    -fx-alignment: center;
+    -fx-border-color: #FFECB3;
+}

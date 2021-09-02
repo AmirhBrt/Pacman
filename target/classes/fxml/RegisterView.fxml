@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" stylesheets="@../styles/RegisterStyle.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterController">
+    <top>
+        <Label fx:id="text" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" text="pacman" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </Label>
+    </top>
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <Label fx:id="label" prefHeight="98.0" prefWidth="566.0">
+                <font>
+                    <Font name="Chiller" size="24.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="50.0" />
+                </VBox.margin>
+            </Label>
+            <TextField fx:id="usernameField" alignment="CENTER" maxHeight="80.0" maxWidth="360.0" onKeyPressed="#pressedEnter" prefHeight="80.0" prefWidth="360.0" promptText="Username">
+                <font>
+                    <Font name="Chiller" size="30.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="10.0" top="10.0" />
+                </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" maxHeight="80.0" maxWidth="360.0" onKeyPressed="#pressedEnter" prefHeight="80.0" prefWidth="360.0" promptText="Password">
+                <font>
+                    <Font name="Chiller" size="30.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="10.0" top="10.0" />
+                </VBox.margin>
+            </PasswordField>
+            <Button fx:id="button" mnemonicParsing="false" onKeyPressed="#pressedEnter" onMouseClicked="#register" prefHeight="54.0" prefWidth="166.0" text="Register" textAlignment="CENTER">
+                <font>
+                    <Font name="Chiller" size="24.0" />
+                </font>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Label fx:id="back" onMouseClicked="#back" prefHeight="124.0" prefWidth="127.0" text="Back">
+                <VBox.margin>
+                    <Insets bottom="10.0" top="20.0" />
+                </VBox.margin>
+            </Label>
+        </VBox>
+    </center>
+</BorderPane>

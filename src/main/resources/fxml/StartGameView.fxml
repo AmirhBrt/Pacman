@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.Integer?>
+<BorderPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@../styles/StartGameStyle.css" minWidth="1200"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="control.StartGameController">
+    <top>
+        <Label fx:id="text" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" text="pacman" textAlignment="RIGHT"
+               textOverrun="CLIP" wrapText="true" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+            <font>
+                <Font size="31.0"/>
+            </font>
+        </Label>
+    </top>
+    <center>
+        <AnchorPane fx:id="maze" BorderPane.alignment="CENTER">
+        </AnchorPane>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="142.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <Label fx:id="textToShowToUser" alignment="CENTER" prefHeight="46.0" prefWidth="418.0">
+                <VBox.margin>
+                    <Insets bottom="10.0"/>
+                </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                <Label text="Pacman Life">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0"/>
+                    </HBox.margin>
+                </Label>
+                <fx:define>
+                    <Integer fx:id="min" fx:value="2"/>
+                    <Integer fx:id="max" fx:value="5"/>
+                </fx:define>
+                <Spinner fx:id="spinner" prefHeight="59.0" prefWidth="146.0" min="$min" max="$max">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0"/>
+                    </HBox.margin>
+                </Spinner>
+            </HBox>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" text="Start Game" onAction="#startGame">
+            </Button>
+        </VBox>
+    </bottom>
+    <left>
+        <VBox fx:id="vBox" alignment="CENTER" prefHeight="596.0" prefWidth="194.0" BorderPane.alignment="CENTER">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#back" text="Back">
+                <VBox.margin>
+                    <Insets bottom="30.0" top="30.0"/>
+                </VBox.margin>
+            </Button>
+            <Button fx:id="saveMapButton" alignment="CENTER" mnemonicParsing="false" onAction="#saveMap"
+                    text="Save Map">
+                <VBox.margin>
+                    <Insets bottom="30.0" top="30.0"/>
+                </VBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#createNewMaze" prefHeight="55.0"
+                    prefWidth="121" text="New Map">
+                <VBox.margin>
+                    <Insets bottom="30.0" top="30.0"/>
+                </VBox.margin>
+            </Button>
+            <Button fx:id="loadMapButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                    onMouseClicked="#openLoadMapController" prefHeight="55.0" prefWidth="125.0" text="Load Map">
+                <VBox.margin>
+                    <Insets bottom="30.0" top="30.0"/>
+                </VBox.margin>
+            </Button>
+            <BorderPane.margin>
+                <Insets top="200.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </left>
+
+</BorderPane>

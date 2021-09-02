@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'PacFont';
+    src: url('fonts/PacFont.TTF');
+}
+
+* {
+    dark-primary-color: #212121;
+    default-primary-color: #FFC107;
+    light-primary-color: #FFECB3;
+    text-primary-color: #FFA000;
+    accent-color: #232e6d;
+    primary-text-color: #212121;
+    secondary-text-color: #414343;
+    divider-color: #BDBDBD;
+}
+
+.root {
+    -fx-background-color: black;
+}
+
+#text {
+    -fx-font-family: PacFont;
+    -fx-font-size: 50;
+    -fx-text-fill: #fffb00;
+    -fx-cursor: normal;
+}
+
+.label {
+    -fx-font-family: Chiller;
+    -fx-alignment: center;
+    -fx-text-fill: #fffb00;
+    -fx-font-size: 30;
+}
+
+.label:hover {
+    -fx-font-size: 35;
+    -fx-text-fill: #536DFE;
+    -fx-cursor: hand;
+}
+
+.button {
+    -fx-background-color: black;
+    -fx-font-family: Chiller;
+    -fx-border-color: #fffb00;
+    -fx-text-fill: #fffb00;
+    -fx-border-radius: 35;
+    -fx-font-size: 25;
+    -fx-background-radius: 35;
+}
+
+.button:hover {
+    -fx-border-color: #536DFE;
+    -fx-text-fill: #536DFE;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: black;
+    -fx-background-radius: 35;
+    -fx-font-family: Harrington;
+    -fx-border-color: #fffb00;
+    -fx-text-fill: white;
+    -fx-border-radius: 35;
+}
+
+#changePasswordMenu{
+    -fx-background-color: #3e3d3d;
+    -fx-background-radius: 30;
+}
+
+#changePassLabel{
+    -fx-font-family: Chiller;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 30;
+}
+
+#deleteAccountMenu{
+    -fx-background-color: #3e3d3d;
+    -fx-background-radius: 30;
+
+}
+
+#sureToDelete{
+    -fx-font-family: Chiller;
+    -fx-alignment: center;
+    -fx-font-size: 30;
+    -fx-cursor: default;
+}
+#sureToDelete:hover{
+    -fx-text-fill: #fffb00;
+}

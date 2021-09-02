@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1200.0" stylesheets="@../styles/StartGameStyle.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.GameController">
+    <top>
+        <Label fx:id="text" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" text="pacman" textAlignment="RIGHT" textOverrun="CLIP" wrapText="true" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <AnchorPane fx:id="maze" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="75.0" />
+            </BorderPane.margin>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="726.0" prefWidth="179.0" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" layoutX="19.0" layoutY="179.0" prefHeight="38.0" prefWidth="139.0" text="Score" />
+            <Label fx:id="scoreField" layoutX="20.0" layoutY="236.0" prefHeight="64.0" prefWidth="138.0" />
+            <VBox fx:id="lifeCounterVBox" alignment="CENTER_RIGHT" layoutX="40.0" layoutY="315.0" prefHeight="200.0" prefWidth="100.0" />
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="726.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+            <Button fx:id="pauseButton" layoutX="28.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#pauseGame" prefHeight="56.0" prefWidth="100.0" text="Pause" />
+            <Button layoutX="28.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="56.0" prefWidth="100.0" text="Exit" />
+            <Button fx:id="restart" disable="true" layoutX="28.0" layoutY="476.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="100.0" text="Restart" visible="false" />
+        </AnchorPane>
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="123.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <Label fx:id="textToShow" alignment="CENTER" layoutX="378.0" layoutY="6.0" prefHeight="38.0" prefWidth="444.0" />
+        </AnchorPane>
+    </bottom>
+
+</BorderPane>

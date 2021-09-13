@@ -1,5 +1,5 @@
 # Pacman
-just a simple Pacman game java
+just a simple Pacman game in java
 
 
 -Amirhossein Barati
